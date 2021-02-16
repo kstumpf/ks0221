@@ -77,7 +77,7 @@ public class StringFormatting {
      * Uses the BigDecimal method setScale to accurately round half up to cents.
      *
      * @param chargeValue    A currency value given as a BigDecimal.
-     * @return               A formatted version of the BigDecimal as a String.
+     * @return               A formatted version of the BigDecimal.
      */
     public static BigDecimal formatCurrency(BigDecimal chargeValue) {
         int newScale = 2;
