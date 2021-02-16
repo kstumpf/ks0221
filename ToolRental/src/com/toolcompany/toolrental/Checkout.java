@@ -62,7 +62,7 @@ public class Checkout {
         toolCode = StringFormatting.cleanString(toolCode).toUpperCase();
         boolean isValidToolCode = availableTools.isValid(toolCode);
         if (!isValidToolCode) {
-            throw new IllegalArgumentException("The entered Tool Code" + toolCode + " does not exist. Please enter a valid Tool Code.");
+            throw new IllegalArgumentException("The entered Tool Code " + toolCode + " does not exist. Please enter a valid Tool Code.");
         }
 
         // Generate the relevant information for crafting the Rental Agreement.
