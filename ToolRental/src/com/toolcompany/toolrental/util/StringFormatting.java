@@ -64,7 +64,7 @@ public class StringFormatting {
      * Uses the Java class NumberFormat to format the BigDecimal appropriately.
      *
      * @param chargeValue    A currency value given as a BigDecimal. This currency value should already have been formatted with formatCurrency.
-     * @return               A formatted version of the int as a String.
+     * @return               A formatted version of the BigDecimal as a String.
      */
     public static String formatCurrencyToString(BigDecimal chargeValue) {
         Locale currencyLocale = Locale.US;
@@ -77,7 +77,7 @@ public class StringFormatting {
      * Uses the BigDecimal method setScale to accurately round half up to cents.
      *
      * @param chargeValue    A currency value given as a BigDecimal.
-     * @return               A formatted version of the int as a String.
+     * @return               A formatted version of the BigDecimal as a String.
      */
     public static BigDecimal formatCurrency(BigDecimal chargeValue) {
         int newScale = 2;
@@ -89,7 +89,7 @@ public class StringFormatting {
      * Formatted Value Example: 02/14/21
      *
      * @param date    A date given as a LocalDate.
-     * @return        A formatted version of the date as a String.
+     * @return        A formatted version of the LocalDate as a String.
      */
     public static String formatDateToString(LocalDate date, String dateFormat) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateFormat);
